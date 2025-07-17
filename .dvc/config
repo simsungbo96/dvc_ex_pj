@@ -1,6 +1,10 @@
 [core]
-    remote = gdrive_remote
+    remote = myremote
+    hardlink_lock = true
 ['remote "myremote"']
-    url = /tmp/dvcstore
+    url = ssh://wini@192.168.5.18/home/wini/remote_mount
+    port = 10022
 ['remote "gdrive_remote"']
-    url = gdrive://14vnEggd7q4fVDRbyFgeSCpA2hlxRifWT
+    url = gdrive://0AIac4JZqHhKmUk9PDA/dvcstore
+    gdrive_acknowledge_abuse = true
+    gdrive_use_service_account = false
